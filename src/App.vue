@@ -1,17 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
+
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <!-- Use the NewsList component with a query -->
+    <NewsList query="f" />
+    <NewsList query="Technology" />
+    <NewsList query="Business" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
+import NewsList from './components/NewsList.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    NewsList
   }
-}
+};
 </script>
 
 <style>
