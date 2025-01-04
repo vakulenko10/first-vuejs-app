@@ -12,13 +12,11 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
 import NewsList from './components/NewsList.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     NewsList
   }
 };
